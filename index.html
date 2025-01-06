@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rory McAllister - Projects</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #2d3748;
+            --secondary-color: #4a5568;
+            --accent-color: #3182ce;
+            --background-color: #f7fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: var(--secondary-color);
+        }
+
+        .intro {
+            margin: 3rem 0;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-card p {
+            flex-grow: 1;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .project-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            align-self: flex-start;
+        }
+
+        .status-complete {
+            background-color: #c6f6d5;
+            color: #22543d;
+        }
+
+        .status-progress {
+            background-color: #fefcbf;
+            color: #744210;
+        }
+
+        footer {
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            ;
+            font-size: 1.8rem;
+            margin-left: 1.5rem;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+            transform: translateY(-3px);
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Rory McAllister</h1>
+            <p>🔧 Mechanical Engineer | 🎓 Tribology | 🛠️ Tinkerer</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- <section class="intro">
+            <h2>About Me</h2>
+            <p>I'm a mechanical engineer with a PhD in tribology (the study of friction, wear, and
+                lubrication). I love learning across all sorts of technical fields and combining them. When I'm not working on professional projects, I like to
+                tinker with various software and hardware projects.</p>
+        </section> -->
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>🌍 BrowserBabel</h3>
+                    <p>A Chrome extension that enhances language learning by replacing text on web pages with your
+                        target language, giving you gentle immersion.</p>
+                    <span class="project-status status-complete">✅ Completed</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>✏️ Technical Illustrator</h3>
+                    <p>A web-based tool that allows users to upload CAD files and generate professional technical
+                        illustrations. Perfect for documentation and presentations.</p>
+                    <span class="project-status status-progress">🔄 In Progress</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>📚 Research Assistant</h3>
+                    <p>A modified version of VS Code that serves as a reference manager and AI-powered paper reading
+                        assistant, streamlining the research workflow.</p>
+                    <span class="project-status status-progress">🔄 In Progress</span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/mcallisterdev" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/rory-mcallister-b7a652114" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
